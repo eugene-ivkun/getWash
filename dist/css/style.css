@@ -183,6 +183,10 @@ body {
   color: #72727E;
 }
 
+.main-wrap {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1210px;
   padding: 0 20px;
@@ -427,7 +431,6 @@ body {
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
 
 .hero__btn {
@@ -588,7 +591,6 @@ body {
   padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
-  overflow-x: hidden;
 }
 
 .fast-start__title {
