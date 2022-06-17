@@ -404,6 +404,7 @@ body{
         img{
             width: 100%;
             height: auto;
+            margin-bottom: -3px;
         }
     }
     &__img-2{
@@ -576,9 +577,9 @@ body{
             }
         }
         &-icon{
-            margin-bottom: 20px;
             font-weight: 300;
             margin: 0 auto;
+            margin-bottom: 20px;
         }
         &-title{
             margin-bottom: 10px;

@@ -479,6 +479,7 @@ body {
 .hero__img-1 img {
   width: 100%;
   height: auto;
+  margin-bottom: -3px;
 }
 
 .hero__img-2 {
@@ -598,9 +599,9 @@ body {
 }
 
 .fast-start__block-icon {
-  margin-bottom: 20px;
   font-weight: 300;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .fast-start__block-title {
