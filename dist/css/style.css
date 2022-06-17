@@ -183,8 +183,9 @@ body {
   color: #72727E;
 }
 
-.main-wrap {
-  overflow: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
 .container {
