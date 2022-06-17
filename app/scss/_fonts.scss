@@ -1,0 +1,15 @@
+@mixin font($f-name, $type, $weight) {
+      @font-face {
+        font-family: '#{$f-name}';
+        src: url('../fonts/#{$f-name}-#{$type}.woff2') format('woff2'),
+             url('../fonts/#{$f-name}-#{$type}.woff') format('woff'),
+             url('../fonts/#{$f-name}-#{$type}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+      }
+  }
+
+  @include font("GTEestiProDisplay", "Light", 300);
+  @include font("GTEestiProDisplay", "Medium", 500);
+  @include font("GTEestiProDisplay", "Regular", 400);
