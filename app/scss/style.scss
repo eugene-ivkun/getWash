@@ -13,7 +13,6 @@ body{
     font-weight: 300;
     font-size: 14px;
     color: #72727E;
-    overflow-x: hidden;
 }
 
 @function con-size($w) {
@@ -303,6 +302,7 @@ body{
     background-position: left bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     @media (min-width: 768px) {
         text-align: left;
         background-image: none;
@@ -545,6 +545,7 @@ body{
     padding-top: 50px;
    padding-bottom: 30px;
     text-align: center;
+    overflow-x: hidden;
     @media(min-width: 768px) {
         padding-top: 0px;
         padding-bottom: 140px;

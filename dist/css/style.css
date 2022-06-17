@@ -181,7 +181,6 @@ body {
   font-weight: 300;
   font-size: 14px;
   color: #72727E;
-  overflow-x: hidden;
 }
 
 .container {
@@ -428,6 +427,7 @@ body {
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .hero__btn {
@@ -588,6 +588,7 @@ body {
   padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .fast-start__title {
