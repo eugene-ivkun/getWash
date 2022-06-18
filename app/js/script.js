@@ -4,7 +4,8 @@ $(document).click(function(e) {
     if(!elemClass) return;
     let elemMass = elemClass.split(",");
     $.each(elemMass, function(index, el) {
-        $("." + el).toggleClass(el + "--open");
+        let elem = $("." + el);
+        elem.toggleClass(el + "--open");
     });
 });
 
