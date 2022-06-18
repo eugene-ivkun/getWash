@@ -1,23 +1,27 @@
-// $(document).click(function(e) {
-//     let btn = $(e.target).closest("[data-toggle-class]");
-//     let elemClass = btn.attr("data-toggle-class");
-//     if(!elemClass) return;
-//     let elemMass = elemClass.split(",");
-//     $.each(elemMass, function(index, el) {
-//         let elem = $("." + el);
-//         elem.toggleClass(el + "--open");
-//     });
-// });
+$("[data-toggle-class]").click(function() {
+    let btn = $(this);
+    let elemClass = btn.attr("data-toggle-class");
+    if(!elemClass) return;
+    let elemMass = elemClass.split(",");
+    $.each(elemMass, function(index, el) {
+        let elem = $("." + el);
+        if( btn.is("[data-menu-btn]") ) {
+            elem.toggleClass(el + "--open");
+        }
+        else elem.removeClass(el + "--open");
+    });
+});
 
-// $(document).click(function(e) {
-//     let btn = $(e.target).closest("[data-scrollto]");
-//     let scrollClass = btn.attr("data-scrollto");
-//     if(!scrollClass) return;
-//     let scrollElem = $(scrollClass);
-//     $("html, body").animate({
-//         scrollTop:  scrollElem.offset().top - 50
-//     }, 1000);
-// });
+$("[data-scrollto]").click(function() {
+    let btn = $(this);
+    let scrollClass = btn.attr("data-scrollto");
+    if(!scrollClass) return;
+    let scrollElem = $(scrollClass);
+    $("html, body").animate({
+        scrollTop:  scrollElem.offset().top - 50
+    }, 1000);
+});
+
 
 
 

@@ -1,16 +1,19 @@
-$(document).click(function(e) {
-    let btn = $(e.target).closest("[data-toggle-class]");
+$("[data-toggle-class]").click(function() {
+    let btn = $(this);
     let elemClass = btn.attr("data-toggle-class");
     if(!elemClass) return;
     let elemMass = elemClass.split(",");
     $.each(elemMass, function(index, el) {
         let elem = $("." + el);
-        elem.toggleClass(el + "--open");
+        if( btn.is("[data-menu-btn]") ) {
+            elem.toggleClass(el + "--open");
+        }
+        else elem.removeClass(el + "--open");
     });
 });
 
-$(document).click(function(e) {
-    let btn = $(e.target).closest("[data-scrollto]");
+$("[data-scrollto]").click(function() {
+    let btn = $(this);
     let scrollClass = btn.attr("data-scrollto");
     if(!scrollClass) return;
     let scrollElem = $(scrollClass);
@@ -18,6 +21,7 @@ $(document).click(function(e) {
         scrollTop:  scrollElem.offset().top - 50
     }, 1000);
 });
+
 
 
 
