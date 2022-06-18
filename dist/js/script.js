@@ -18,3 +18,14 @@ $(document).ready(function() {
         prevArrow: $(".reviews__slider-btn--prev")
     });
 });
+
+$(document).click(function(e) {
+    let btn = $(e.target).closest("[data-scrollto]");
+    let scrollClass = btn.attr("data-scrollto");
+    if(!scrollClass) return;
+    let scrollElem = $(scrollClass);
+    // scrollTop( scrollElem.offset().top - 50 )
+    $("html, body").animate({
+        scrollTop:  scrollElem.offset().top - 50
+    }, 1000);
+});
