@@ -221,19 +221,19 @@ html {
   transition: all 0.5s;
 }
 
-.menu-btn--open div:nth-child(1) {
+.menu-btn.active div:nth-child(1) {
   -webkit-transform: rotate(-44deg) translate(-4px, 5px);
   -ms-transform: rotate(-44deg) translate(-4px, 5px);
   transform: rotate(-44deg) translate(-4px, 5px);
 }
 
-.menu-btn--open div:nth-child(2) {
+.menu-btn.active div:nth-child(2) {
   -webkit-transform: rotate(44deg) translate(-3px, -4px);
   -ms-transform: rotate(44deg) translate(-3px, -4px);
   transform: rotate(44deg) translate(-3px, -4px);
 }
 
-.menu-btn--open div:nth-child(3) {
+.menu-btn.active div:nth-child(3) {
   display: none;
 }
 
@@ -253,7 +253,7 @@ html {
   background-color: white;
 }
 
-.header__line--open {
+.header__line.active {
   position: fixed;
 }
 
@@ -338,7 +338,7 @@ html {
   margin-bottom: 38px;
 }
 
-.nav--open {
+.nav.active {
   -webkit-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
   transform: translate(0, 0%);
@@ -1072,7 +1072,7 @@ html {
 }
 
 @media (min-width: 768px) {
-  .header__line--open {
+  .header__line.active {
     position: static;
   }
 

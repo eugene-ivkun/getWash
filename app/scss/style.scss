@@ -48,7 +48,7 @@ body, html{
         border-radius: 500px;
         transition: all 0.5s;
     }
-    &--open{
+    &.active{
         div{
             &:nth-child(1){
                 transform: rotate(-44deg) translate(-4px,5px);
@@ -80,7 +80,7 @@ body, html{
         position: relative;
         z-index: 10;
         background-color: white;
-        &--open{
+        &.active{
             position: fixed;
             @media (min-width: 768px) {
                 position: static;
@@ -199,7 +199,7 @@ body, html{
             margin-bottom: 0px;
         }
     }
-    &--open{
+    &.active{
         transform: translate(0, 0%);
     }
 }
