@@ -1,11 +1,16 @@
-$("[data-toggle-class]").click(function() {
+$("[data-toggle-class], [data-remove-class]").click(function() {
     let btn = $(this);
-    let elemClass = btn.attr("data-toggle-class");
-    if(!elemClass) return;
+    let elemClass;
+    if(btn.attr("data-toggle-class")) {
+        elemClass = btn.attr("data-toggle-class");
+    }
+    else if(btn.attr("data-remove-class")) {
+        elemClass = btn.attr("data-remove-class");
+    }
     let elemMass = elemClass.split(",");
     $.each(elemMass, function(index, el) {
         let elem = $("." + el);
-        if( btn.is("[data-menu-btn]") ) {
+        if(btn.attr("data-toggle-class") ) {
             elem.toggleClass(el + "--open");
         }
         else elem.removeClass(el + "--open");
